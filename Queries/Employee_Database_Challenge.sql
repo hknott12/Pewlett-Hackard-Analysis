@@ -1,3 +1,5 @@
+--Deliverable 1
+
 --Retirement Titles Table
 SELECT
 e.emp_no,
@@ -21,3 +23,29 @@ title
 INTO unique_titles
 FROM retirement_titles
 ORDER BY emp_no, to_date DESC
+
+--Retiring Titles Table
+SELECT COUNT(title)
+INTO retiring_titles
+FROM unique_titles
+GROUP BY title
+ORDER BY count DESC;
+
+--Deliverable 2 
+
+SELECT DISTINCT ON (emp_no) 
+e.emp_no, 
+e.first_name, 
+e.last_name, 
+e.birth_date,
+de.from_date, 
+de.to_date,
+titles.title
+INTO mentorship_eligible
+FROM employees as e
+INNER JOIN dept_emp as de
+ON e.emp_no = de.emp_no
+INNER JOIN titles 
+ON e.emp_no = titles.emp_no
+WHERE e.birth_date BETWEEN  '1965-01-01' AND '1965-12-31'
+ORDER BY emp_no;
