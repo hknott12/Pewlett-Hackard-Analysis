@@ -21,19 +21,19 @@ Query output image: ![image of retiring titles](images/retiring_titles.png)
 
 ### Major Point 4  
 Another major finding from this analysis is a list of the employees nearing retirement who are eligible for a mentorship program to help train new employees. This table is shown below.  
-Complete csv file: ![mentorship_eligible](data/mentorship_eligibility.csv)
+Complete csv file: ![mentorship_eligibility](data/mentorship_eligibility.csv)  
 Query output image:   ![images](images/mentorship_eligibility.png)   
 
 ## Summary and Additional Questions 
 1. How many roles will need to be filled as the silver tsunami makes an impact?  
 The number of roles that will need to be filled as the silver tsunami makes an impact can be found using the table of retiring titles. This table shows the nubmer of employees of retiring age for each job title. The overal number of roles that need to be filled can be found using the query:  
-SELECT COUNT(emp_no)  
-FROM unique_titles;  
-The result is 90,399.  
+  SELECT COUNT(emp_no)  
+  FROM unique_titles;  
+  The result is 90,399.  
 2. Are there enough qualified, retirement-ready employees in the department to mentor the next generation of Pewlett-Hackard employees?  
 To answer this question, a query can be run on the mentorship eligible table to count the number of employees who qualify. Then, this number can be compared to the number of employees who are retiring. The following query can be used to determine the number of mentorship-eligible employees by job title:  
-SELECT COUNT(title)  
-INTO mentorship_count  
-FROM mentorship_eligible  
-GROUP BY title  
-ORDER BY count DESC;  
+  SELECT COUNT(title)  
+  INTO mentorship_count  
+  FROM mentorship_eligible  
+  GROUP BY title  
+  ORDER BY count DESC;  
