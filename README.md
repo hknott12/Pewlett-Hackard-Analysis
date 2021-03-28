@@ -21,8 +21,8 @@ Query output image: ![image of retiring titles](images/retiring_titles.png)
 
 ### Major Point 4  
 Another major finding from this analysis is a list of the employees nearing retirement who are eligible for a mentorship program to help train new employees. This table is shown below.  
-Complete csv file: ![mentorship_eligible](data/mentorship_eligible.csv)  
-Query output image: ![images](images/mentorship_eligible.png)  
+Complete csv file: ![mentorship_eligible] 
+Query output image: ![images](images/mentorship_eligible.png)   
 
 ## Summary and Additional Questions 
 1. How many roles will need to be filled as the silver tsunami makes an impact?  
