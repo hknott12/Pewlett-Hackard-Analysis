@@ -7,12 +7,12 @@ SQL Queries: ![queries](Queries/Employee_Database_Challenge.sql)
 ### Major Point 1: Retirement Titles Table
 The first major finding from this analysis is the table of information for the titles of those employees who are reaching retirement age. An issue with this table is that some employees have had multiple titles throught their career with Pewlett Hackard. Because of this, an additional table was necessary to show the most recent job title. However, this table still has useful information and is shown below.  
 Complete csv file: ![reitirement_titles](data/reitirement_titles.csv)   
-Query output image: ![image](images/retirement_titles.png)  
+Query output image:  ![image](images/retirement_titles.png)  
 
 ### Major Point 2: Unique Titles Table  
 Because of the issue of multiple titles per employee in the previous table, the next significant finding shows each employee's most recent title. This will be helpful as it shows who is leaving each role. The table is shown below.  
 Complete csv file: ![unique_titles](data/unique_titles.csv)  
-Query output image: ![images](images/unique_titles.png)  
+Query output image:  ![images](images/unique_titles.png)  
 
 ### Major Point 3  
 The third major finding from this analysis is the number of employees who are leaving each job title. This is important for planning how many employees will need to be hired to fill these roles. Of note, the job title with the most openings is Senior Engineer. The table is pictured below.  
@@ -21,8 +21,8 @@ Query output image: ![image of retiring titles](images/retiring_titles.png)
 
 ### Major Point 4  
 Another major finding from this analysis is a list of the employees nearing retirement who are eligible for a mentorship program to help train new employees. This table is shown below.  
-Complete csv file: ![mentorship_eligible] 
-Query output image: ![images]  
+Complete csv file: ![mentorship_eligible](data/mentorship_eligibility.csv)
+Query output image:   ![images](images/mentorship_eligibility.png)   
 
 ## Summary and Additional Questions 
 1. How many roles will need to be filled as the silver tsunami makes an impact?  
